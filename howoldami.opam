@@ -1,0 +1,21 @@
+opam-version: "2.0"
+maintainer: "Daniel Hillerström"
+authors: "Daniel Hillerström"
+synopsis: "How old are you?"
+description: "Tells you how old you *really* are."
+homepage: "https://github.com/dhil/howoldami"
+dev-repo: "git+https://github.com/dhil/howoldami.git"
+bug-reports: "https://github.com/dhil/howoldami/issues"
+license: "GPL-3"
+version: "30"
+
+
+build: [
+  [ "dune" "subst" ] {pinned}
+  [ "dune" "build" "-p" name "-j" jobs ]
+]
+
+depends: [
+  "ocaml" {>= "4.08.1"}
+  "dune" {>= "1.10.0"}
+]
