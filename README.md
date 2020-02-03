@@ -9,7 +9,7 @@ $ howoldami 1970-01-01
 ```
 or set the environment variable `BIRTHDAY` prior to invocation of the utility
 ```
-$ BIRTHDAY=1970-01-01
+$ export BIRTHDAY=1970-01-01
 $ howoldami
 50
 ```
